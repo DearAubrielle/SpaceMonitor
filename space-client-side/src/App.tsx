@@ -1,10 +1,22 @@
 import './App.css'
-import Layout from './components/Layout'
+import Header from './components/Header'
+import Sidebar from './components/Sidebar'
+import { Outlet } from 'react-router'
 function App() {
   
     return (
     <>
-    <Layout/>
+    <div id='layout'>
+            <Header />
+            <div className='mainWrapper'>
+                <Sidebar />
+                <main>
+                    <Outlet/>
+                </main>
+
+            </div>
+            
+        </div>
     </>
   )
 }

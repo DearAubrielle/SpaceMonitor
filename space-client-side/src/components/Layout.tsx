@@ -27,7 +27,6 @@ const Layout = () => {
             <Header />
             <div className='mainWrapper'>
                 <Sidebar />
-                
                 <main>
                 <div>
                 <h1>My App</h1>
@@ -89,7 +88,7 @@ const Layout = () => {
                     facilisi. Sed nec odio sit amet purus tincidunt lacinia.
                 </p>
                 </div>
-            </main>
+                </main>
 
             </div>
             
