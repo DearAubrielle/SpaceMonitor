@@ -10,6 +10,8 @@
 }
 
 .sidebar{
+    
+    background-color: #f5f8ff;
     padding: 0 20px 100px 20px;
     flex-direction: column;
     display: flex;
@@ -33,7 +35,7 @@
 }
 
 .sidebar ul li a {
-    color: white;
+    color: rgb(90, 66, 109);
     text-decoration: none;
 }
 
