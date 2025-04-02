@@ -7,7 +7,7 @@ import Watage from './pages/Watage.tsx';
 
 const routes = createBrowserRouter([
   {
-    path: "/",
+    
     Component: App,
     children: [
         { 
