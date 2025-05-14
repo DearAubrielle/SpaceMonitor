@@ -1,4 +1,3 @@
-
 .sidebarContainer{
     position: sticky;
     --offset: var(--sticky-header-with-actions-height);

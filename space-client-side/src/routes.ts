@@ -4,8 +4,9 @@ import Home from './pages/Home.tsx';
 import Login from './pages/Login.tsx';
 import Googogaga from './Googogaga.tsx';
 import Watage from './pages/Watage.tsx';
-import FloorPlan from './pages/FloorPlan.tsx';
+import FloorPlan from './pages/Floorplan.tsx';
 import FloorplanPage from './pages/FloorplanPage.tsx';
+
 const routes = createBrowserRouter([
   {
     
