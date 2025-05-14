@@ -19,7 +19,8 @@
     "baseUrl": "./src",
     "paths": {
       "@/components/*": ["./components/*"],
-      "@/pages/*": ["./pages/*"]
+      "@/pages/*": ["./pages/*"],
+      "@/images/*": ["./images/*"]
     },
     /* Linting */
     "strict": true,

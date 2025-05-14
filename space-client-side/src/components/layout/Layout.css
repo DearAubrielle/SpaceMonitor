@@ -20,5 +20,3 @@ main {
     grid-template-areas: "sidebar main";
     grid-template-columns: var(--sidebar-width) 1fr;
 }
-
-
