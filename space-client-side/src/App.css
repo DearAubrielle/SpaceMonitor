@@ -8,3 +8,21 @@ body {
     box-sizing: border-box;
     
 }
+
+#layout {
+    grid-template-columns: 100%;
+
+}
+main {
+    grid-area: main;
+    background-color: #fffff2;
+    padding: 40px 40px 90vh 40px;
+    
+    
+}
+.mainWrapper {
+    display: grid;
+    margin: 0;
+    grid-template-areas: "sidebar main";
+    grid-template-columns: var(--sidebar-width) 1fr;
+}

@@ -1,30 +1,25 @@
 import { useState } from 'react';
-import groundFloor from '@/images/floorplans/house_ground_floor.jpg';
 
 const floorplans = [
-  { id: 1, name: 'Ground Floor', image: groundFloor }
+  {
+    id: 1,
+    name: 'Ground Floor',
+    image: '@/images/floorplans/house_ground_floor.jpg',
+  },
+  {
+    id: 2,
+    name: 'Second Floor',
+    image: '/images/floorplans/house_second_floor.png',
+  },
+  {
+    id: 3,
+    name: 'Rooftop Garden',
+    image: '/images/floorplans/house_rooftop.png',
+  },
 ];
-
-interface Sensor {
-  id: number;
-  x: number;
-  y: number;
-}
 
 export default function FloorplanPage() {
   const [selected, setSelected] = useState(floorplans[0]);
-  const [sensors, setSensors] = useState<Sensor[]>([]);
-
-  const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    setSensors((prev) => [
-      ...prev,
-      { id: prev.length + 1, x, y },
-    ]);
-  };
 
   return (
     <div style={{ display: 'flex', height: '100vh', padding: '1rem', gap: '1rem' }}>
@@ -74,8 +69,6 @@ export default function FloorplanPage() {
           justifyContent: 'center',
           position: 'relative',
         }}
-        onDragOver={(e) => e.preventDefault()}
-        onDrop={handleDrop}
       >
         <img
           src={selected.image}
@@ -87,22 +80,7 @@ export default function FloorplanPage() {
             borderRadius: '5px',
           }}
         />
-        {/* Sensor Overlay */}
-        {sensors.map((sensor) => (
-          <div
-            key={sensor.id}
-            style={{
-              position: 'absolute',
-              top: sensor.y,
-              left: sensor.x,
-              width: '16px',
-              height: '16px',
-              backgroundColor: 'red',
-              borderRadius: '50%',
-              transform: 'translate(-50%, -50%)',
-            }}
-          />
-        ))}
+        {/* Future: Add drag-and-drop sensor overlay here */}
       </div>
     </div>
   );

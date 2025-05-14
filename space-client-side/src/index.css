@@ -1,14 +1,13 @@
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     color: rgba(35, 82, 104, 0.87);
-    background-color: #879253;
-  
+    background-color: #eff7cb;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    --sidebar-width: 250px;
+    --sidebar-width: 220px;
     --header-height: 50px;
     --max-width: 1440px;
     --icon-size: 1rem;
