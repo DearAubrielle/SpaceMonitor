@@ -1,4 +1,3 @@
-
 .sidebarContainer{
     position: sticky;
     --offset: var(--sticky-header-with-actions-height);
@@ -11,7 +10,7 @@
 
 .sidebar{
     
-    background-color: #f5f8ff;
+    background-color: #efeaff;
     padding: 0 20px 100px 20px;
     flex-direction: column;
     display: flex;
@@ -28,6 +27,7 @@
 .sidebar ul {
     list-style: none;
     padding: 0;
+    
 }
 
 .sidebar ul li {
@@ -41,4 +41,10 @@
 
 .sidebar ul li a:hover {
     color: #f72f71;
+}
+
+.activeLink {
+    font-weight: bold;
+    border-left: 4px solid #007bff; /* Example border color */
+    padding-left: 10px; /* Adjust padding to align text properly */
 }

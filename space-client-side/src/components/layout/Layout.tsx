@@ -1,27 +1,7 @@
 import './Layout.css';
-import { useEffect, useRef } from 'react';
 import Header from './Header';
 import Sidebar from './Sidebar';
 const Layout = () => {
-    const footerRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (footerRef.current) {
-                if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-                    footerRef.current.style.display = 'block';
-                } else {
-                    footerRef.current.style.display = 'none';
-                }
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-    
     return (
         <div id='layout'>
             <Header />
