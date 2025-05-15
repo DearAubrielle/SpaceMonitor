@@ -1,4 +1,27 @@
-import ImageUpload from "@/components/floorplan/ImageUpload";
+import Users from "./Users";
+import styles from './FloorPlan.module.css';
+const FloorPlan: React.FC = () => {
+    return (
+        <div>
+            <div className={styles.container}>
+                <h1>Floor Plan</h1>
+            </div>
+
+            <div>
+                <Users />
+            </div>
+            
+            
+
+        </div>
+        
+        
+    );
+};
+
+export default FloorPlan;
+
+/* import ImageUpload from "@/components/floorplan/ImageUpload";
 import Users from "./Users";
 
 import styles from './FloorPlan.module.css';
@@ -25,4 +48,4 @@ const FloorPlan: React.FC = () => {
     );
 };
 
-export default FloorPlan;
+export default FloorPlan; */
