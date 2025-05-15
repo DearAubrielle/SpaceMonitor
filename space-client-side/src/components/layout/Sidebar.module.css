@@ -41,3 +41,9 @@
 .sidebar ul li a:hover {
     color: #f72f71;
 }
+
+.activeLink {
+    font-weight: bold;
+    border-left: 4px solid #007bff; /* Example border color */
+    padding-left: 10px; /* Adjust padding to align text properly */
+}
